@@ -22,7 +22,6 @@ import java.util.List;
  * @date 2017/12/28
  */
 
-
 public class ListFragment extends Fragment {
 
 	private View mContentView;
