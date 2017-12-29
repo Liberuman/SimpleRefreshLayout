@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RefreshLayout">
+        <attr name="headerViewResId" format="reference"/>
+        <attr name="footerViewResId" format="reference"/>
+        <attr name="supportTouchBottomLoad" format="boolean"/>
+        <attr name="mode" format="enum">
+            <enum name="disable" value="0"/>
+            <enum name="refresh" value="1"/>
+            <enum name="load_more" value="2"/>
+            <enum name="both" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>
