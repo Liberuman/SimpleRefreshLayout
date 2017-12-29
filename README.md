@@ -27,7 +27,9 @@
 	MODE_BOTH(3);
 	
 2. 对AbsListView(如ListView, GridView)和RecycleView提供了触底加载机制，通过设置mSupportedTouchBottomLoad来实现开启，默认为开启状态；
+
 3. 通过示例代码对ListView, GridView, ScrollView, WebView, RecycleView, ViewPager, TextView进行了测试，都可正常工作；
+
 4. 该组件提供了自定义头部和底部布局的功能，既可通过设置监听来实现，也可通过重写RefreshLayout来实现统一风格的刷新组件。
 
 
