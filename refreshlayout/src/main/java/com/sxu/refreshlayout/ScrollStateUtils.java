@@ -4,6 +4,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.util.Log;
 import android.view.View;
 import android.widget.AbsListView;
 import android.widget.ScrollView;
@@ -43,7 +44,7 @@ public class ScrollStateUtils {
 		if (listView.getChildCount() > 0) {
 			firstItemTop = listView.getChildAt(0).getTop() - listView.getPaddingTop();
 		}
-
+		Log.i("out", "firstItemTop===" + firstItemTop);
 		return listView.getFirstVisiblePosition() == 0 && firstItemTop == 0;
 	}
 

@@ -39,7 +39,6 @@ public class GridFragment extends Fragment {
 		super.onViewCreated(view, savedInstanceState);
 		GridView gridView = mContentView.findViewById(R.id.grid);
 		final RefreshLayout refreshLayout = mContentView.findViewById(R.id.refresh_layout);
-
 		final List<String> items = new ArrayList<>();
 		for (int i = 0; i < 40; i++) {
 			items.add("Item" + i);

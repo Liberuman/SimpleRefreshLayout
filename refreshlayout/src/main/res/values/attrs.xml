@@ -4,6 +4,8 @@
         <attr name="headerViewResId" format="reference"/>
         <attr name="footerViewResId" format="reference"/>
         <attr name="supportTouchBottomLoad" format="boolean"/>
+        <attr name="viscosity" format="float"/>
+        <attr name="loadMoreOffset" format="dimension"/>
         <attr name="mode" format="enum">
             <enum name="disable" value="0"/>
             <enum name="refresh" value="1"/>

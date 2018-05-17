@@ -67,6 +67,7 @@ public class RecycleFragment extends Fragment {
 			View itemView = View.inflate(getContext(), R.layout.item_recycle_layout, null);
 			final RefreshLayout refreshLayout = itemView.findViewById(R.id.refresh_layout);
 			final RecyclerView recyclerView = itemView.findViewById(R.id.recycle);
+			refreshLayout.setMode(RefreshLayout.Mode.MODE_BOTH);
 			refreshLayout.setOnRefreshListener(new RefreshLayout.OnRefreshListener() {
 				@Override
 				public void onRefresh(View headerView) {
