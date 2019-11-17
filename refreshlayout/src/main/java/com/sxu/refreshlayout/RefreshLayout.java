@@ -189,7 +189,9 @@ public class RefreshLayout extends LinearLayout {
 		} else {
 			if (mRefreshStatus == REFRESH_STATUS_REFRESH_COMPLETE
 					|| mRefreshStatus == REFRESH_STATUS_NONE) {
-				resetRefreshLayout();
+				if (getScrollY() >= 0) {
+					resetRefreshLayout();
+				}
 				mRefreshStatus = REFRESH_STATUS_NONE;
 			} else if (mRefreshStatus == REFRESH_STATUS_LOAD_COMPLETE) {
 				resetLoadMoreLayout();
